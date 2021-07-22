@@ -4,8 +4,10 @@ import classes from './MealItemForm.module.css';
 const MealsItemForm = (props) => {
     return (
     <form className={classes.form}>
-        <Input lable ="Amount" input={{
-            id: 'amount',
+        <Input 
+        lable ="Amount" 
+        input={{
+            id: 'amount_'+ props.id,
             type: 'number',
             min: '1',
             max: '5',
